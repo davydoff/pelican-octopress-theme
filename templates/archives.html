@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% block title %}{{ SITENAME }} Archive {% endblock %}
+{% block title %}{{ SITENAME }} Архив {% endblock %}
 {% block content %}
 <div>
 	<article role="article">
     	<header>
-    		<h1 class="entry-title">Blog Archive</h1>
+    		<h1 class="entry-title">Архив</h1>
     	</header>
 
     	<div id="blog-archives">
@@ -20,7 +20,7 @@
 						    	<span class="year">{{ article.date.strftime('%Y') }}</span> 
     						</time>
 	    					<footer>
-		    					<span class="categories">posted in 
+		    					<span class="categories">в разделе  
 			    					<a class='category' href='{{ SITEROOT }}/{{ article.category.url }}'>{{ article.category }}</a>
 				    				{{ tag }}
 					    		</span>

@@ -5,15 +5,6 @@
   {% endif %}
 </ul>
 
-<!-- TODO: add search here
-<form action="{{ SITESEARCH }}" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:{{ SITEURL }}" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
--->
-
 <ul class="main-navigation">
   {% for title, link in MENUITEMS %}
     <li><a href="{{ link }}">{{ title }}</a></li>
@@ -22,6 +13,5 @@
     {% for page in PAGES %}
       <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
-    <!-- TODO: add categories here? -->
   {% endif %}
 </ul>
