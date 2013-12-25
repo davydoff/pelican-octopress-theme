@@ -9,9 +9,9 @@
     </footer>
   </article>
 
-  {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+  {% if DISQUS_SITENAME and SITEURL %}
   <section>
-    <h1>Comments</h1>
+    <h1>Комментарии</h1>
     <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
   </section>
   {% endif %}
