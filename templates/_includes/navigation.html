@@ -1,4 +1,12 @@
 <ul class="subscription" data-subscription="rss">
+  <li>
+  <form action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:{{ SITEURL }}" />
+          <input class="search" type="text" name="q" results="0" placeholder="Найти"/>
+    </fieldset>
+  </form>
+  </li>
   {% if FEED_ATOM %}
   <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" rel="subscribe-rss">RSS</a></li>
   {% endif %}
