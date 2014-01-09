@@ -1,6 +1,7 @@
 {% if LINKS %}
     <section>
         <h1>Разное</h2>
+        <ul>
         {% for name, link in LINKS %}
             <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
         {% endfor %}
