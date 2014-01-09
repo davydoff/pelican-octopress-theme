@@ -1,14 +1,10 @@
 <div class="pagination">
   {% if articles_page.has_next() %}
-    <a class="prev" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">&larr; Назад</a>
+    <a class="prev" href="{{ SITEURL }}/{{ articles_next_page.url }}">&larr; Вперед</a>
   {% endif %}
 
   {% if articles_page.has_previous() %}
-    {% if articles_page.previous_page_number() == 1 %}
-      <a class="next" href="{{ SITEURL }}/{{ page_name }}.html">Вперед &rarr;</a>
-    {% else %}
-      <a class="next" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">Вперед &rarr;</a>
-    {% endif %}
+    <a class="next" href="{{ SITEURL }}/{{ articles_previous_page.url }}">Назад &rarr;</a>
   {% endif %}
   <br />
 </div>
